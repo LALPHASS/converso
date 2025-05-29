@@ -48,8 +48,8 @@ const CompanionList = ({title, companions, classNames}:CompanionsListProps) => {
                   </div>
                 </Link>
               </TableCell>
-              <TableCell className="subject-badge w-fit max-md:hidden" >
-                <div>
+              <TableCell >
+                <div className="subject-badge w-fit max-md:hidden" >
                   {subject}
                 </div>
                 <div className="flex items-center justify-center rounded-lg w-fit p-2 md:hidden " style={{backgroundColor: getSubjectColor(subject)}}>
