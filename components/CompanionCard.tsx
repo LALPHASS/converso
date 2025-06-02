@@ -15,16 +15,18 @@ const CompanionCard = ({id, name, topic, duration, subjet, color}:CompanionsCard
   return (
     <article className="companion-card" style={{backgroundColor: color}}>
         <div  className="flex justify-between items-center">
-          <div className="subject-badge">
-            <span>{subjet}</span>
 
+          <div className="subjet-badge">
+            {subjet}
           </div>
+
           <button className="companion-bookmark">
             <Image src={bookmark} alt= 'bookmark' width={12.5} height={15}/>
           </button>
         </div>
         <h2 className="text-2xl font-bold">{name}</h2>  
         <p className="text-sm">{topic}</p>
+
         <div className="flex items-center gap-2">
           <Image src={clock} alt="duration" width={13.5} height={13.5} />
           <p className="text-sm">{duration} mins duration</p>
